@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<v-vertical-layout size-full>
+    <v-horizontal-layout width-full>
+        <v-button style-name="borderless" _id="contactsButton" caption="contacts">Contacts</v-button>
+        <v-label :expand="1"/>
+        <v-button style-name="borderless" _id="registrationButton" caption="registration">Registration</v-button>
+        <v-button style-name="borderless" _id="loginButton" caption="login">Login</v-button>
+    </v-horizontal-layout>
+    <v-horizontal-layout size-full :expand>
+        <v-panel caption="Menu " size-full :expand="0.15"/>
+        <v-panel caption="Content" size-full :expand="0.85">
+            <v-vertical-layout _id="contentVerticalLayout">
+                <v-label _id="contentLabel"></v-label>
+            </v-vertical-layout>
+        </v-panel>
+    </v-horizontal-layout>
+</v-vertical-layout>
+</body>
+</html>
